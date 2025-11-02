@@ -1,0 +1,1370 @@
+body{
+    background-color: aqua;
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+
+}
+
+/*navbar style*/
+
+#navContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px dotted #A376A2;
+}
+
+
+/*dark mode  and med-access logo*/
+#dark-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 20px;
+}
+
+#darkmode{
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+#darkmode >  img{
+    width: 100%;
+}
+
+#logo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+#logo > a > img{
+  width: 55px;
+  height: 55px;
+  border: 2px solid #A376A2;
+  border-radius: 100%;
+}
+
+#logo > hr{
+  width: 500px;
+  margin-top: -5px;
+  border: #A376A2 1px solid;
+}
+
+
+/*navbar options style*/
+#navBarOptions{
+    margin-right: 20px;
+}
+#navBarOptions > ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 20px;
+}
+#navBarOptions > ul > li {
+   width: 70px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 5px;
+}
+#navBarOptions > ul > li > a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+#navBarOptions > ul >li:hover{
+   background-color: #A376A2;
+   color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*home page*/
+
+/*hero style*/
+#hero{
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("../images/hero-img-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-position: center;
+
+}
+
+#welcomeText{
+    width: 32%;
+    margin-left: 13px;
+    font-size: 20px;
+    color: aliceblue;
+}
+#welcomeText > p > span{
+    color: #121212;
+  }
+/*content style*/
+
+/*content 1 */
+#content-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top:20px ;
+    margin-bottom: 30px;
+}
+#content-1-Imgs{
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 190px 190px;
+  gap: 10px;
+}
+
+#content-1-Imgs > div{
+    width:  100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px #A376A2;
+}
+/*#content-1-Imgs > div:hover{
+  transform: translateY(-5px); 
+    opacity: 0.5;
+}*/
+.d-1-a{
+    background-image: url("../images/people/girl-smilling-1.png");
+    background-size: cover;
+    background-position: center;
+}
+.d-1-b{
+  background-image: url("../images/people/black-person-jogging.png");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+#content-1-Text{
+  border-left: 3px dotted #A376A2;
+    width: 570px;
+    padding: 5px;
+}
+
+.C1Text{
+  margin-left: 20px;
+}
+
+.C1Text > h3{
+  text-decoration: underline;
+  color: #A376A2;
+  font-size: 22px;
+}
+.C1Text > p{
+  font-size: 20px;
+}
+/*content 2 */
+
+#content-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+#content-2-text{
+    width: 350px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    border-right: 5px dotted aliceblue;
+}
+.C2Text{
+  font-size: 22px;
+  color: white;
+  text-decoration: underline;
+}
+
+#content-2-plans{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#plans{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.plan{
+  width: 250px;
+  height: 270px;
+  border-radius: 30px;
+ 
+}
+.plan-img{
+  border: 1px solid ;
+  border-radius: 30px;
+  height: 55%;
+  display: flex;
+  justify-content: center;
+}
+
+.plan-Name{
+  border: 1px solid;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: white;
+  margin-top: -25px;
+  cursor: pointer;
+}
+.plan-Name>a{
+  text-decoration: none;
+  color: black;
+}
+.plan-Name>a:hover{
+  color: aliceblue;
+}
+
+.pricing{
+   border-radius: 30px;
+}
+
+.p-1{
+  margin-left: 20px;
+  color: aliceblue;
+  font-size: 17px;
+}
+.p-2{
+  text-align: center;
+   font-size: 30px;
+     margin-top: -6px;
+}
+.p-3{
+  margin-left: 150px;
+  color: aliceblue;
+  font-size: 13px;
+  margin-top: -25px;
+}
+/*basic plan sytle*/
+.basic{
+    border: 1px solid green;
+     box-shadow: 1px 1px 1px 1px green;
+}
+.basic >.plan-img{
+   background-image: url("../images/plans/teacher-kids.webp");
+   background-size: cover;
+    border: 1px solid green;
+}
+
+.basic > .plan-img > .plan-Name{
+  border: 1px solid green;
+}
+.basic > .plan-img > .plan-Name:hover{
+  background-color: green;
+  color:aliceblue;
+  box-shadow: 1px 1px 1px 1px aliceblue;
+}
+.basic > .pricing{
+   border: 1px solid green;
+}
+
+/*standard plan style*/
+.standard{
+    border: 1px solid #DD0303;
+     box-shadow: 1px 1px 1px 1px #DD0303;
+}
+.standard >.plan-img{
+   background-image: url("../images/plans/doctor-patient-glasses.jpg");
+   background-size: cover;
+   border: 1px solid #DD0303;
+}
+.standard > .plan-img > .plan-Name{
+  border: 1px solid #DD0303;
+}
+.standard > .plan-img > .plan-Name:hover{
+  background-color: #DD0303;
+  color:aliceblue;
+  box-shadow: 1px 1px 1px 1px aliceblue;
+}
+.standard > .pricing{
+   border: 1px solid #DD0303;
+}
+
+/*premium plan style */
+.premium{
+    border: 1px solid #1055C9;
+     box-shadow: 1px 1px 1px 1px #1055C9;
+}
+.premium >.plan-img{
+   background-image: url("../images/plans/patient-doctor.png");
+   background-size: cover;
+   border: 1px solid #1055C9;
+}
+.premium > .plan-img > .plan-Name{
+  border: 1px solid #1055C9;
+}
+.premium > .plan-img > .plan-Name:hover{
+  background-color: #1055C9;
+  color:aliceblue;
+  box-shadow: 1px 1px 1px 1px aliceblue;
+}
+.premium > .pricing{
+   border: 1px solid #1055C9;
+}
+
+/*family plan style */
+.family{
+    border: 1px solid #CBCBCB;
+     box-shadow: 1px 1px 1px 1px #CBCBCB;
+     display: none;
+}
+.family >.plan-img{
+   background-image: url("../images/plans/nurse-assisting-family.jpg");
+   background-size: cover;
+   border: 1px solid #CBCBCB;
+}
+.family > .plan-img > .plan-Name{
+  border: 1px solid #CBCBCB;
+}
+.family > .plan-img > .plan-Name:hover{
+  background-color: #CBCBCB;
+  color:aliceblue;
+  box-shadow: 1px 1px 1px 1px aliceblue;
+}
+.family > .pricing{
+   border: 1px solid #CBCBCB;
+}
+
+
+.arrows{
+  width: 40px;
+  cursor: pointer;
+}
+.arrows > img{
+  width: 100%;
+  height: 100%;
+}
+
+#lessthan{
+  visibility: hidden;
+}
+/*.arrows:hover{
+  width: 50px;
+}*/
+
+
+/*content 3 */
+#content-3{
+    padding: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#content-3-check{
+    width: 500px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+#check-img{
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/doctor-check.png");
+  background-size: cover;
+  border-radius: 30px;
+  box-shadow: 1px 1px 1px 1px #A376A2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#checkBtn{
+  margin-right: 10px;
+}
+
+#check{
+  font-size: 15px;
+  height: 40px;
+  border-radius: 20px;
+  color: #A376A2;
+  border: 1px solid #A376A2;
+  cursor: pointer;
+}
+#check:hover{
+  color: aliceblue;
+  background-color: #A376A2;
+}
+
+
+/*symptoms style*/
+
+#symptomsC{
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  box-shadow: 1px 1px 1px 1px #A376A2;
+  display: none;
+}
+
+#symptomsC-A{
+  display: flex;
+  height: 170px;
+  margin-top: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#selectSymptoms{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.selectSymptoms{
+  width: 180px;
+  height: 35px;
+  border-radius: 20px;
+  border: 2px solid #A376A2;
+}
+
+#feedback{
+     width: 240px;
+     border-left: 3px dotted #A376A2;
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     font-size: 10px;
+}
+#feedback > p{
+  margin-left: 5px;
+
+}
+#checkbtn{
+  display: flex;
+  justify-content: flex-end;
+  gap:20px;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+#checkbtn > input{
+ width: 80px;
+  height: 33px;
+  color: #A376A2;
+  border: 1px solid #A376A2;
+  cursor: pointer; 
+  border-radius: 5px;
+}
+#checkbtn > input:hover{
+  color: aliceblue;
+  background-color: #A376A2;
+}
+
+
+
+#content-3-text{
+    width: 500px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 3px dotted #A376A2;
+    flex-wrap: wrap;
+}
+
+#health-tips{
+  font-size: 19px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*about page*/
+
+/*about hero style*/
+#about-hero{
+    height: 27vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url("../images/light-pattern-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#about-hero > h1{
+  color: #A376A2;
+  margin-top: 80px;
+  margin-right: 200px;
+  font-size: 40px;
+}
+
+/*about content 5 style*/
+#content-5{
+
+}
+
+#about-content-5A{
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+   gap: 45px;
+}
+
+#about-img{
+  display: grid;
+  grid-template-columns: 270px 270px;
+  grid-template-rows: 210px 210px;
+  gap: 7px;
+}
+
+#about-img>div{
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 1px 1px 1px 1px #A376A2;
+}
+#about-img-1{
+   background-image: url("../images/people/x-ray-doctor.jpg");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+#about-img-2{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+     background-image: url("../images/people/doctor-kid.webp");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+#about-img-3{
+     background-image: url("../images/people/Quaified-consultant-with-patient.jpg");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+
+
+/*about content-5A text*/
+#about-text-1{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 15px ;
+  gap: 15px;
+  border-radius: 40px;
+  box-shadow: 3px 3px 3px 3px #A376A2;
+}
+
+#about-text-1A{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+
+#about-text-1C>ul{
+ list-style: none;
+}
+
+.text-1{
+   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: 1px 1px  1px 1px #A376A2;
+}
+
+
+
+.text-1 > h2{
+  color: #A376A2;
+}
+
+/*about content-5B text*/
+#about-content-5B{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 5px;
+  margin-bottom: 50px;
+}
+#chooseUsH{
+  text-align: center;
+  color: #A376A2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#chooseUS{
+   border-top: 3px dotted #A376A2;
+   border-bottom: 3px dotted #A376A2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 10px;
+   gap: 25px;
+   flex-wrap: wrap;
+ 
+}
+
+
+.chooseUS-1{
+  width: 320px;
+  height: 200px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-wrap: wrap;
+  box-shadow: 1px 1px 1px 1px #A376A2;
+}
+#chooseUS-A{
+  background-image: url("../images/people/doctor-patient-consultation.webp");
+}
+#chooseUS-B{
+  background-image: url("../images/people/doctor_patient.jpg");
+}
+#chooseUS-C{
+  background-image: url("../images/people/Doctor-calling.webp");
+}
+
+
+
+
+.chooseUS-1 > div{
+  border: 1px solid #A376A2;
+  width: 150px;
+  height: 100px;
+  font-size: 11px;
+  border-radius: 30px;
+  text-align: center;
+  background-color: white;
+  opacity: 0.5;
+}
+
+.chooseUS-1 > div:hover{
+   opacity: 1;
+   border: 2px solid #A376A2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact page*/
+
+/*contact hero style*/
+
+#contact-hero{
+    height: 27vh;
+    display: flex;
+    align-items: center;
+    background-image: url("../images/light-pattern-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#contact-hero > h1{
+  color: #A376A2;
+  margin-top: 80px;
+  margin-left: 200px;
+  font-size: 40px;
+}
+
+
+/*content-4 style */
+#content-4{
+  /*border: 3px solid red;*/
+  padding: 10px;
+}
+
+#contact-content{
+ /* border: #121212 1px solid;*/
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#contact-content > div{
+ /* border: 1px solid red;*/
+  width: 400px;
+  padding: 10px;
+}
+
+/*plans style*/
+#contact-plans{
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   flex-wrap: wrap;
+   border-right: 3px dotted #A376A2;
+}
+.plans-1{
+  height: 140px;
+  border-radius: 80px;
+  box-shadow: 1px 1px 1px 1px #A376A2;
+}
+
+
+.plans-1{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#plan-C{
+   /*border: 1px solid red;*/
+   height: 100%;
+   width: 70%;
+   border-radius: 80px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#plan-C > div{
+ 
+  width: 95%;
+  height: 95%;
+  border-radius: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 10px;
+}
+#plan-H{
+  width: 29.7%;
+  color: #A376A2;
+}
+#plan-H>p{
+   text-align: center;
+}
+
+/*basic */
+#basic> #plan-C{
+  background-color: #A376A2;
+}
+#basic> #plan-C > div{
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px  green;
+  color: green;
+}
+
+/*standard plan */
+#standard> #plan-C{
+  background-color: #A376A2;
+}
+#standard > #plan-C > div{
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px  #DD0303;
+  color: #DD0303;
+}
+
+/*premium plan*/
+#premium> #plan-C{
+  background-color: #A376A2;
+}
+#premium > #plan-C > div{
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px  #1055C9;
+  color: #1055C9;
+}
+
+/*family plan*/
+#family> #plan-C{
+  background-color: #A376A2;
+}
+#family > #plan-C > div{
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px  #CBCBCB;
+  color: #CBCBCB;
+}
+
+/*forms style*/
+#contact-forms{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#formBtn{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#formBtn > input{
+  width: 110px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #A376A2;
+  cursor: pointer;
+  color: #A376A2;
+  font-size: 15px;
+}
+
+#formBtn > input:hover{
+  background-color: #A376A2;
+  color: aliceblue;
+}
+
+/*medical aid form*/
+#medicalAid{
+  padding: 5px;
+  border-radius: 30px;
+  box-shadow: 3px 3px 3px 3px #A376A2; 
+}
+
+#medicalForm{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-around;
+
+}
+
+#formH{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  color: #A376A2;
+}
+
+#formInput-1{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+#formInput-1 > input{
+   width: 170px;
+   height: 30px;
+   border-radius: 5px;
+   border: 2px solid #A376A2;
+}
+
+#formInput-2{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+#formInput-2 > input{
+   width: 170px;
+   height: 30px;
+   border-radius: 5px;
+   border: 2px solid #A376A2;
+}
+
+#formInput-3{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+}
+#formInput-3 > select{
+  width: 375px;
+  height: 30px;
+  border: 2px solid #A376A2;
+  border-radius: 5px;
+}
+
+#formInput-4{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#formInput-4 >input{
+  width: 20px;
+  height: 15px;
+}
+#formInput-4 >label{
+  font-size: 12px;
+  width: 340px;
+}
+
+#formInput-5{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+#formInput-5>input{
+  width: 250px;
+  height: 35px;
+  border-radius:50px;
+  border: 2px solid #A376A2;
+  cursor: pointer;
+  font-size: 15px;
+  color: #A376A2;
+}
+
+#formInput-5>input:hover{
+  background-color: #A376A2;
+  color: aliceblue;
+}
+
+/*message form*/
+#message{
+  padding: 5px;
+  border-radius: 30px;
+  box-shadow: 3px 3px 3px 3px #A376A2;
+  display: none;
+}
+
+#messageForm{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-around;
+
+}
+
+#messageForm > #formInput-2 > textarea{
+  width: 370px;
+   height: 150px;
+   border-radius: 5px;
+   border: 2px solid #A376A2;
+}
+
+/*success message*/
+#successMessage{
+  padding: 5px;
+  border-radius: 30px;
+  box-shadow: 3px 3px 3px 3px #A376A2; 
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+#successIcon{
+  border-radius: 40px;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#successIcon > div{
+  border: #A376A2 2px dotted;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+#successIcon > div > img{
+  width: 100%;
+  height: 100%;
+}
+#successText{
+  text-align: center;
+  color: #A376A2;
+}
+#successBtn{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3px;
+}
+#successBtn>input{
+  width: 100px;
+  height: 35px;
+  border-radius: 70px;
+  border: 1px solid #A376A2;
+  color: #A376A2;
+  cursor: pointer;
+}
+#successBtn>input:hover{
+  background-color: #A376A2;
+  color: aliceblue;
+}
+
+
+
+/*vidoe style*/
+#contact-video{
+  /*border: 2px solid red ;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-left: 3px dotted #A376A2;
+}
+
+#video{
+ /* border: 3px solid yellow;*/
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+#video-play{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 25px;
+   box-shadow: 2px 2px 2px 2px #A376A2;
+}
+#video-play > video{
+  width: 100%;
+  height: 100%;
+   border-radius: 25px;
+}
+#video-header{
+ /* border: 1px solid red;*/
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  align-items: center;
+
+}
+#video-header>div{
+  width: 10px;
+  height: 10px;
+   background-color: #A376A2;
+  border-radius: 50%;
+}
+#video-header > p:hover{
+  color: #A376A2;
+  text-decoration: underline;
+}
+
+#video-btn{
+  /*border: 1px solid green;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.vbtn{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.vbtn > img{
+  width: 100%;
+  height: 100%;
+}
+
+#btnLessThan{
+  display: none;
+}
+.dots{
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 1px #A376A2 solid;
+}
+
+#dot1{
+  background-color: #A376A2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer style*/
+#footer{
+  border: 1px solid #A376A2;
+    background:linear-gradient(to right, #A376A2, #daa5e1, #ff98f8);
+}
+
+#footer-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#address-number{
+
+}
+#address-number > ul{
+   list-style: none;
+   color: aliceblue;
+}
+
+#socialmedia{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.socialmedia-icons{
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 5px;
+}
+.socialmedia-icons:hover{
+  border: #A376A2 solid;
+}
+
+.socialmedia-icons > a >img{
+  width: 100%;
+  height: 100%;
+}
+
+#footerlogo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    cursor: pointer;
+    align-items: flex-end;
+}
+
+#footerlogo > img{
+  width: 55px;
+ /* height: 55px;*/
+  border: 2px solid #A376A2;
+  border-radius: 100%;
+}
+
+#footerlogo > hr{
+  width: 350px;
+  margin-top: -5px;
+  border: aliceblue 1px solid;
+}
+
+#copyrights{
+    text-align: center;
+    color: aliceblue;
+}
+
+
+
+
+/*js*/
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+
+body {
+ background-color: white;
+  color: black;
+}
+
+
+/*animations*/
+@keyframes slideAndRotate {
+  from {
+    transform: translateX(0px) rotate(0deg);
+  }
+  to {
+    transform: translateX(440px) rotate(360deg);
+  }
+}
+
+@keyframes slideAndRotateReverse {
+   from {
+     transform: translateX(0px) rotate(0deg);
+   }
+   to {
+       transform: translateX(-300px) rotate(-360deg);
+ }
+}
+
+.slideAndRotate {
+  animation: slideAndRotate 4s ease-in-out infinite;
+}
+.slideAndRotateLeft {
+   animation: slideAndRotateReverse 4s ease-in-out infinite;
+}
+
+/*fonts*/
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 2px;
+  font-style: normal;
+}
+
+
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 20px;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+/* background gradient */
+
+.gradient-background {
+  background: linear-gradient(300deg, #A376A2, #daa5e1, #ff98f8);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

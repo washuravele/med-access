@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+      <link  rel="icon" href="./images/logo/MED-ACCESS-LOGO-LIGHT.png"> 
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <!--google fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Caveat:wght@400..700&family=Ga+Maamli&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    
+    <!--navigate bar-->
+      <div id="navContainer">
+        <!--dark mode and logo-->
+            <div id="dark-logo">
+                   <div id="darkmode">
+                       <img src="./images/icons/light-mode.png">
+                   </div>
+                   <div id="logo">
+                        <a href="./index.html"><img  class="slideAndRotate" src="./images/logo/MED-ACCESS-LOGO-LIGHT.png" ></a> 
+                         <hr>
+                   </div>
+             </div>
+
+        <!--navbar options-->
+            <div id="navBarOptions">
+                <!--options-->
+                    <ul>
+                         <li><a href="./index.html" >Home</a></li> 
+                         <li style="background-color: #A376A2;"><a href="./contact.html" style="color: white;">Contact</a></li>                   
+                         <li><a href="./about.html">About</a></li>   
+                       
+                    </ul>
+            </div>
+      </div>
+
+     <!--contact hero-->
+     <div id="contact-hero">
+        <!--hero header-->
+         <h1 class="roboto">Contact Us</h1>
+     </div>
+
+     <!--content-4-->
+     <div id="content-4">
+
+       <div id="contact-content">
+            <!--plans-->
+             <div id="contact-plans">
+
+                <!--basic plan-->
+                <div class="plans-1" id="basic">
+
+                  <!--basic  plan heading-->
+                     <div id="plan-H">
+                          <p class="roboto">Basis plan</p>
+                     </div>
+
+                     <!--basic plan content-->
+                      <div id="plan-C">
+                              <div>
+                                  <ul class="montserrat">
+                                     <li>Up to 3 general doctor visits per year</li>
+                                     <li>Includes 3 General Practitioner consultations annually</li>
+                                     <li>Basic medication included</li>
+                                  </ul>
+                              </div>
+                     </div>
+
+                </div>
+
+
+                <!--standard plan-->
+                <div class="plans-1" id="standard">
+
+                      <!--standard plan content-->
+                      <div id="plan-C">
+                              <div>
+                                  <ul class="montserrat">
+                                     <li>Unlimited GP visits at network doctors</li>
+                                     <li>Optical and dental benefits</li>
+                                     <li>Maternity care support</li>
+                                  </ul>
+                              </div>
+                     </div>
+
+                      <!--standard  plan heading-->
+                       <div id="plan-H">
+                          <p class="roboto">Standard plan</p>
+                     </div>
+
+                </div>
+
+                 <!--premium plan-->
+                <div class="plans-1" id="premium">
+                    
+                     <!--premium  plan heading-->
+                     <div id="plan-H">
+                          <p class="roboto">Premium plan</p>
+                     </div>
+
+                     <!--premium plan content-->
+                      <div id="plan-C">
+                              <div>
+                                  <ul class="montserrat">
+                                     <li>Unlimited hospital and specialist cover</li>
+                                     <li>Full chronic and maternity benefits</li>
+                                     <li>Advanced dental, optical, and mental health cover</li>
+                                     <li>Worldwide emergency assistance</li>
+                                     <li>24/7 nurse and doctor-on-call services</li>
+                                  </ul>
+                              </div>
+                     </div>
+
+                </div>
+
+                <!--family plan-->
+                <div class="plans-1" id="family">
+
+                    <!--family plan content-->
+                      <div id="plan-C">
+                              <div>
+                                  <ul class="montserrat">
+                                     <li>Chronic medication cover</li>
+                                     <li>Full maternity, dental, and optical benefits</li>
+                                     <li>Worldwide emergency assistance</li>
+                                     <li>Wellness and fitness rewards</li>
+                                  </ul>
+                              </div>
+                     </div>
+
+                     <!--family  plan heading-->
+                     <div id="plan-H">
+                          <p class="roboto">family plan</p>
+                     </div>
+
+
+                </div>
+
+             </div>
+
+             <!--forms-->
+             <div id="contact-forms">
+                <!--form buttons-->
+                <div id="formBtn">
+                    <input style="background-color: #A376A2; color: aliceblue;" id="medAid" class="roboto" type="button" value="Medical Aid">
+                    <input id="messageBtn" class="roboto" type="button" value="Message">
+                </div>
+
+                <!--medical aid form and nessage to send-->
+                <!--medical aid-->
+                <div id="medicalAid">
+                       <form id="medicalForm" action="./php/medicalAidConnect.php" method="post">
+
+                            <div id="formH">
+                                <p class="roboto">Get Medical Aid</p>
+                            </div>
+                            
+                            <div id="formInput-1">
+                                <input class="montserrat" id="firstname" type="text" name="firstname" placeholder="firstname" required>
+                                <input class="montserrat" id="lastname" type="text" name="lastname" placeholder="lastname" required>
+                            </div>
+
+                            <div id="formInput-2">
+                                <input class="montserrat" id="email" type="email" name="email"  placeholder="Email" required>
+                                <input class="montserrat" id="phone"  type="text"  name="phone"  placeholder="Phone number">
+                            </div>
+                             
+                            <div id="formInput-3">
+                                 <select class="montserrat" name="plan">
+                                    <option value="">Select A Plan</option>
+                                    <option value="Basic Plan">Basic Plan</option>
+                                    <option value="Standard Plan">Standard Plan</option>
+                                    <option value="Premium Plan">Premium Plan</option>
+                                    <option value="Family Plan">Family Plan</option>
+                                 </select>
+                            </div>
+                             
+                            <div id="formInput-4">
+                                 <input type="checkbox">
+                                 <label class="montserrat">By providing my details and clicking “submit”, I agree that my information will
+                                       be transferred to MED-ACCESS contracted third party brokers and marketing agents,
+                                        and that such information shall be used to contact me by email or telephone to 
+                                        provide me with further information and to otherwise facilitate such transaction as may eventuate
+                                </label>
+                            </div>
+
+                            <div id="formInput-5">
+                               <input class="montserrat" type="submit" id="submit"  value="send">
+                            </div>
+
+
+                       </form>
+                       
+                     
+                </div>
+                    <!-- Hidden success message -->
+                     <div id="successMessage">
+                            <div id="successIcon">
+                                 <div>
+                                    <img src="./images/icons/correct-tick.gif">
+                                 </div>
+                            </div>
+                            <div id="successText">
+                                <p class="montserrat">Thank you!We will get in contact with you within 24 hours</p>
+                            </div>
+                            <div id="successBtn">
+                                <input type="button" value="OK">
+                            </div>
+                    </div>
+                   
+                    
+                <!--message form-->
+                   <div id="message">
+                           <form id="messageForm">
+
+                            <div id="formH">
+                                <p class="roboto">Send Us a Message</p>
+                            </div>
+                            
+                            <div id="formInput-1">
+                                <input class="montserrat" id="firstname" type="text" name="firstname" placeholder="Firstname" required>
+                                <input class="montserrat" id="email" type="email" name="Email" placeholder="Email" required>
+                            </div>
+
+                            <div id="formInput-2">
+                                  <textarea id="textMessage" class="montserrat" placeholder="Enter your message"></textarea>
+                            </div>
+                             
+                           
+                             
+                            <div id="formInput-4">
+                                 <input type="checkbox">
+                                 <label class="montserrat">By providing my details and clicking “submit”, I agree that my information will
+                                       be transferred to MED-ACCESS contracted third party brokers and marketing agents,
+                                        and that such information shall be used to contact me by email or telephone to 
+                                        provide me with further information and to otherwise facilitate such transaction as may eventuate
+                                </label>
+                            </div>
+
+                            <div id="formInput-5">
+                               <input class="montserrat" type="submit" value="send">
+                            </div>
+                       </form>
+                   </div>
+
+            </div>
+
+             <!--video section-->
+             <div id="contact-video">    
+                     
+                      <div id="video">
+
+                        <!--video play-->
+                          <div id="video-play">
+                              <video controls src="./vidoes/Home - Personal - Microsoft​ Edge 2025-10-29 02-48-54.mp4"></video>
+                          </div>
+
+                          <!--video header-->
+                          <div id="video-header">
+                             <div></div>
+                             <p class="montserrat">How to apply medical aid</p>
+                          </div>
+
+                          <!--video buttons-->
+                          <div id="video-btn">
+                            <!--lessthan-->
+                               <div id="btnLessThan" class="vbtn">
+                                  <img src="./images/icons/less-than-color.png">
+                               </div>
+                           
+                              <!--dots-->
+                               <div  id="dot1" class="dots"></div>
+                               <div  id="dot2"  class="dots"></div>
+
+                               <!--greater than-->
+                               <div id="btnGreaterThan"  class="vbtn">
+                                  <img src="./images/icons/greater-than-color.png">
+                               </div>
+                          </div>
+
+                      </div>
+                         
+              </div>
+
+       </div>
+
+     </div>
+
+
+
+
+    <!--footer-->
+    <div id="footer" >
+       <div id="footer-details">
+                  <!--address and number phone-->
+                 <div id="address-number">
+                     <ul class="roboto">
+                        <li>MED-ACCESS</li>
+                        <li>35 andries potgreter blod,Vanderbijlpark</li>
+                         <li>+27 11 254 0000</li>
+                     </ul>
+                 </div>
+            <!--social media-->
+                 <div id="socialmedia">
+                     <div class="socialmedia-icons">
+                         <a href=""><img src="./images/icons/facebook-icon.png"></a>
+                     </div>
+                     
+                    <div class="socialmedia-icons">
+                         <a href=""><img src="./images/icons/twitter-icon.png"></a>
+                     </div>
+
+                     <div class="socialmedia-icons">
+                         <a href=""><img src="./images/icons/whatsapp-icon.png"></a>
+                     </div>
+
+                     <div class="socialmedia-icons">
+                         <a href=""><img src="./images/icons/instagram-icon.png"></a>
+                     </div>
+                 </div>
+
+               <div id="footerlogo" >
+                         <img  class="slideAndRotateLeft" src="./images/logo/MED-ACCESS-LOGO-LIGHT.png" >
+                         <hr>
+              </div>
+                
+       </div>
+       <hr>
+       <!--copy rights-->
+       <div id="copyrights">
+           <p>&copy;2025 <span style="color: black;">MED-ACCESS</span>.All rights reserved</p>
+       </div>
+    </div>
+
+    <!--javascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+
+
+</body>
+</html>
