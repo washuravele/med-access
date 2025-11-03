@@ -1,17 +1,9 @@
 /*navbar interactive code*/
 
 
-/*toggle dark mode and light mode*/
-
-const darkModeBtn = document.getElementById('darkmode');
-let isDark = false;
-darkModeBtn.addEventListener('click', () => {
-document.body.classList.toggle('dark');
-isDark = !isDark;
-  
-if(isDark){
-    //change icons and logo
-     $("#darkmode > img").attr("src","./images/icons/dark-mode.png");
+/*dark mode function*/
+function darkMode(){
+  $("#darkmode > img").attr("src","./images/icons/dark-mode.png");
      $("#logo > a > img").attr("src","./images/logo/MED-ACCESS-LOGO-DARK.png");
      $("body").css("backgroundColor", "#121212");
      $("#navContainer").css("background-color","#121212");
@@ -21,10 +13,12 @@ if(isDark){
      $("#footer").css("background","linear-gradient(to right, #121212 ,#A376A2,#121212)");
      $("#content-2").attr("class","gradient-background-dark");
      $(".chooseUS-1 > div > p").css("color","black");
+     $("#cookies").css("background-color","black");
+}
 
-}else{
-      //change icons and logo
-     $("#darkmode > img").attr("src","./images/icons/light-mode.png")
+//light mode function
+function lightMode(){
+    $("#darkmode > img").attr("src","./images/icons/light-mode.png")
      $("#logo > a> img").attr("src","./images/logo/MED-ACCESS-LOGO-LIGHT.png");
      $("body").css("background-color","white");
      $("#navContainer").css("background-color","white");
@@ -33,10 +27,27 @@ if(isDark){
      $("#feedback > p > span").css("color","black");
      $("#footer").css("background","linear-gradient(to right, #A376A2, #daa5e1, #ff98f8)");
      $("#content-2").attr("class","gradient-background");
-    
+      $("#cookies").css("background-color","white");
+}
+
+
+/*toggle dark mode and light mode*/
+const darkModeBtn = document.getElementById('darkmode');
+let isDark = false;
+darkModeBtn.addEventListener('click', () => {
+document.body.classList.toggle('dark');
+isDark = !isDark;
+  
+if(isDark){
+  //dark mode
+     darkMode();
+}else{
+  //light mode
+    lightMode();
   }
 
 });
+
 
 
 
@@ -45,7 +56,6 @@ $("#logo > img").attr("class", "slideAndRotate");
 
 
 /*hero interactive code*/
-
 /*hero media query function*/
 function heromediaQuery(){
    const mediaQuery1 = window.matchMedia('(max-width: 845px)');
@@ -517,7 +527,7 @@ document.addEventListener("DOMContentLoaded", function () {
             successDiv.style.display = "block"; 
             $("#medicalAid").css("display","none");
             $("#message").css("display","none");
-          form.reset();
+            form.reset();
         } else {
           alert("Something went wrong: " + data);
         }
@@ -589,7 +599,28 @@ $("#btnLessThan > img").click("click",()=>{
 
 
 
+/*cookies*/
+$(document).ready(function () {
+
+  // Show the cookie popup when the page loads
+  $("#cookies").fadeIn();
+
+  // Hide the cookie popup when the accept or decline button is clicked
+  $("#accept").click(function () {
+    $("#cookies").fadeOut();
+  });
+
+  // Hide the cookie popup when the decline button is clicked
+  $("#decline").click(function () {
+    $("#cookies").fadeOut();
+  });
+
+});
+
+
+
 /*footer*/
+//get current year
 var date = new Date();
 var year = date.getFullYear();
 document.getElementById("date").innerText = year;

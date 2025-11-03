@@ -1230,6 +1230,10 @@ body{
   position: fixed;
   border-radius: 30px;
   box-shadow: 3px 3px 3px 3px #A376A2;
+  transition: right 0.5s ease-in-out;
+}
+#cookies.show{
+  right: 20px;
 }
 
 #cookies-header{
