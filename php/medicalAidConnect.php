@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Connection failed: " . $conn->connect_error);
     }
 
-    $stmt = $conn->prepare("INSERT INTO medicalaid (firstName, lastName, email, phone, plan) VALUES (?, ?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO medicalaid (first_name, last_name, user_email, user_phone_number, user_plan) VALUES (?, ?, ?, ?, ?)");
     $stmt->bind_param("sssss", $firstName, $lastName, $email, $phoneNumber, $plan);
 
     if ($stmt->execute()) {

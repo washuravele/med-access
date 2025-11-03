@@ -80,7 +80,7 @@
     margin-left:20px ;
   }
 
-  #footerlogo > img{
+  #footerlogo > a> img{
    width: 30px;
     animation-name: none ;
      animation-duration: none;

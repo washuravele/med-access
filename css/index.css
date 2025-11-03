@@ -1,5 +1,4 @@
 body{
-    background-color: aqua;
     padding: 0;
     margin: 0;
     box-sizing: content-box;
@@ -1069,6 +1068,7 @@ body{
 #successIcon > div > img{
   width: 100%;
   height: 100%;
+  border-radius: 50px;
 }
 #successText{
   text-align: center;
@@ -1092,6 +1092,16 @@ body{
 #successBtn>input:hover{
   background-color: #A376A2;
   color: aliceblue;
+}
+
+#successMessage2{
+  padding: 5px;
+  border-radius: 30px;
+  box-shadow: 3px 3px 3px 3px #A376A2; 
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  display: none;
 }
 
 
@@ -1123,6 +1133,7 @@ body{
   flex-wrap: wrap;
   border-radius: 25px;
    box-shadow: 2px 2px 2px 2px #A376A2;
+   width: 380px;
 }
 #video-play > video{
   width: 100%;
@@ -1169,7 +1180,7 @@ body{
 }
 
 #btnLessThan{
-  display: none;
+  visibility: hidden;
 }
 .dots{
   width: 13px;
@@ -1208,9 +1219,54 @@ body{
 
 
 
+/*cookies style*/
+#cookies{
+  bottom: 50px;
+  right: 20px;
+  max-width: 345px;
+  width: 100%;
+  background-color: white;
+  padding: 15px 25px 22px;
+  position: fixed;
+  border-radius: 30px;
+  box-shadow: 3px 3px 3px 3px #A376A2;
+}
 
+#cookies-header{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
 
+#cookies-header>img{
+  width: 35px;
+  height: 35px;
+}
+#cookies-header> h2{
+  font-size: 20px;
+  color: #A376A2;
+}
 
+#cookies-btns{
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+#cookies-btns > input{
+  width: 80px;
+  height: 35px;
+  border-radius: 30px;
+  border: 1px solid #A376A2;
+  color: #A376A2;
+  cursor: pointer;
+}
+#cookies-btns > input:hover{
+  background-color: #A376A2;
+  color: aliceblue;
+}
 
 
 
@@ -1221,7 +1277,7 @@ body{
 /*footer style*/
 #footer{
   border: 1px solid #A376A2;
-    background:linear-gradient(to right, #A376A2, #daa5e1, #ff98f8);
+  background:linear-gradient(to right, #A376A2, #daa5e1, #ff98f8);
 }
 
 #footer-details{
@@ -1231,9 +1287,7 @@ body{
     flex-wrap: wrap;
 }
 
-#address-number{
 
-}
 #address-number > ul{
    list-style: none;
    color: aliceblue;
@@ -1270,7 +1324,7 @@ body{
     align-items: flex-end;
 }
 
-#footerlogo > img{
+#footerlogo > a> img{
   width: 55px;
  /* height: 55px;*/
   border: 2px solid #A376A2;
@@ -1358,6 +1412,25 @@ body {
 }
 
 @keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*dark mode*/
+.gradient-background-dark {
+  background: linear-gradient(300deg, #121212, #A376A2, #121212);
+  background-size: 180% 180%;
+  animation: gradient-animation-dark 18s ease infinite;
+}
+
+@keyframes gradient-animation-dark {
   0% {
     background-position: 0% 50%;
   }

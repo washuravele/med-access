@@ -2,19 +2,40 @@
 
 
 /*toggle dark mode and light mode*/
+
 const darkModeBtn = document.getElementById('darkmode');
 let isDark = false;
 darkModeBtn.addEventListener('click', () => {
-  document.body.classList.toggle('dark');
-  isDark = !isDark;
+document.body.classList.toggle('dark');
+isDark = !isDark;
   
-  if(isDark){
-    $("#darkmode > img").attr("src","./images/icons/dark-mode.png");
-    $("#logo >img").attr("src","./images/logo/MED-ACCESS-LOGO-DARK.png");
-    }else{
-    $("#darkmode > img").attr("src","./images/icons/light-mode.png")
-    $("#logo >img").attr("src","./images/logo/MED-ACCESS-LOGO-LIGHT.png");
+if(isDark){
+    //change icons and logo
+     $("#darkmode > img").attr("src","./images/icons/dark-mode.png");
+     $("#logo > a > img").attr("src","./images/logo/MED-ACCESS-LOGO-DARK.png");
+     $("body").css("backgroundColor", "#121212");
+     $("#navContainer").css("background-color","#121212");
+     $("#navBarOptions > ul >li >a").css("color","white");
+     $("#health-tips > p > span").css("color","white");
+     $("#feedback > p > span").css("color","white");
+     $("#footer").css("background","linear-gradient(to right, #121212 ,#A376A2,#121212)");
+     $("#content-2").attr("class","gradient-background-dark");
+     $(".chooseUS-1 > div > p").css("color","black");
+
+}else{
+      //change icons and logo
+     $("#darkmode > img").attr("src","./images/icons/light-mode.png")
+     $("#logo > a> img").attr("src","./images/logo/MED-ACCESS-LOGO-LIGHT.png");
+     $("body").css("background-color","white");
+     $("#navContainer").css("background-color","white");
+     $("#navBarOptions > ul >li >a").css("color","black");
+     $("#health-tips > p > span").css("color","black");
+     $("#feedback > p > span").css("color","black");
+     $("#footer").css("background","linear-gradient(to right, #A376A2, #daa5e1, #ff98f8)");
+     $("#content-2").attr("class","gradient-background");
+    
   }
+
 });
 
 
@@ -25,6 +46,7 @@ $("#logo > img").attr("class", "slideAndRotate");
 
 /*hero interactive code*/
 
+/*hero media query function*/
 function heromediaQuery(){
    const mediaQuery1 = window.matchMedia('(max-width: 845px)');
 
@@ -77,6 +99,7 @@ if (is2){
 
 /*content-1 interactive code */
 
+/*people images arrays*/
 const peopleImg1 = ["./images/people/man-smiling-1.png",
                    "./images/people/family-happy.png"];
 
@@ -89,6 +112,7 @@ const peopleImg3 =  ["./images/people/black-person-jogging.png",
 const peopleImg4 =["./images/people/elderly-people-newspaper.png",
                    "./images/people/black-family-happy.png"];
 
+/*rotate people images*/
 setInterval(()=>{
     var random1 = Math.floor(Math.random() * peopleImg1.length);
     var random2 = Math.floor(Math.random() * peopleImg2.length);
@@ -103,7 +127,7 @@ setInterval(()=>{
 
 },6000);
 
-
+/*slide images function*/
 function slideImg1(random1,random2,Img1, Img2){
   $(".d-1-a").css({
     "background-image": `url("${Img1[random1]}")`,
@@ -118,7 +142,7 @@ function slideImg1(random1,random2,Img1, Img2){
    })
 
 }
-
+/*slide images function*/
 function slideImg2(random1,random2,Img1,Img2){
     $(".d-2-a").css({
     "background-image": `url("${Img1[random1]}")`,
@@ -137,6 +161,7 @@ function slideImg2(random1,random2,Img1,Img2){
 
 /*content-2 interactive code */
 
+/*rotate plan colors*/
 var planColors = ["green",
                   "#DD0303",
                  "#1055C9",
@@ -154,7 +179,7 @@ setInterval(()=>{
 },4000);
 
 
-
+/*toggle plan images on hover*/
 $(document).ready(function() {
   $("#greater").hover(
     function() {
@@ -176,7 +201,7 @@ $(document).ready(function() {
 
 });
 
-
+/*toggle basic plans and family plans*/
 $("#greater").click(()=>{
     $(".basic").css("display","none");
     $(".family").css("display","block");
@@ -184,6 +209,7 @@ $("#greater").click(()=>{
     $("#lessthan").css("visibility", "visible");
 });
 
+//toggle basic plans and family plans
 $("#lessthan").click(()=>{
     $(".basic").css("display","block");
     $(".family").css("display","none");
@@ -211,6 +237,7 @@ $("#close").on("click",()=>{
 let selectedText1 = "";
 let selectedText2 = "";
 
+/*on click of check button*/
 $("#check-1").click("click",()=>{
 
   selectedText1 = $('#symptoms-A option:selected').index();
@@ -279,6 +306,7 @@ $("#check-1").click("click",()=>{
 
 
 /*health tips*/
+/*array of health tips*/
 const healthTips = [
   {
     name: "WHO",
@@ -324,7 +352,8 @@ const healthTips = [
    
 
 ];
-              
+ 
+/*rotate health tips*/
 setInterval(() =>{
   var randomIndex = Math.floor(Math.random() * healthTips.length);
 
@@ -347,7 +376,7 @@ setInterval(() =>{
 
 /*contact page js*/
 
-
+/*toggle medical aid form and message form*/
 $("#messageBtn").click("click",()=>{
     $("#medicalAid").css("display","none");
     $("#messageBtn").css({
@@ -361,6 +390,7 @@ $("#messageBtn").click("click",()=>{
     $("#message").css("display","block");
 });
 
+/*toggle medical aid form and message form*/
 $("#medAid").click("click",()=>{
     $("#medicalAid").css("display","block");
     $("#messageBtn").css({
@@ -378,10 +408,68 @@ $("#medAid").click("click",()=>{
 
 
 
+//medical aid form validation
+function validateMedicalForm(){
+ var formsubmit = $("#medicalForm >#formInput-5 > input");
+var firstname = $("#firstname");
+var  lastname = $("#lastname");
+var email = $("#email");
+var phone = $("#phone");
+var plan = $("#formPlan");
+var checkbox = $("#formInput-4 > input");
+const successDiv = document.getElementById("successMessage");
+
+
+$(formsubmit).click("click", ()=>{
+  
+  //validation checks
+   if(firstname.val() === ""){
+    alert("First name is required.");
+   }
+    else if(lastname.val() === ""){
+       alert("Last name is required.");
+    }else if(email.val() === ""){
+      alert("Email is required.");
+    }else if(phone.val() === ""){
+      alert("Phone number is required.");
+    }else if(plan.val() === ""){
+      alert("Please select a plan.");
+    }else if(!checkbox.is(":checked")){
+      alert("You must agree to the terms and conditions.");
+    }
+   else if(firstname.val().length < 3){
+    alert("First name must be at least 3 characters long.");
+    e.preventDefault();
+  }else if(lastname.val().length < 3){
+    alert("Last name must be at least 3 characters long.");
+    e.preventDefault();
+  }else if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.val())){
+    alert("Please enter a valid email address.");
+    e.preventDefault();
+  }else if(!/^\d{10}$/.test(phone.val())){
+    alert("Please enter a valid 10-digit phone number.");
+    e.preventDefault();
+  }else{
+      successDiv.style.display = "block";
+      $("#medicalAid").css("display","none");
+       $("#message").css("display","none");
+  } 
+
+});
+
+}
+
+
+
+
+
+
+
 /*form interactive */
+/*medical aid form submission*/
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("medicalForm");
-  const successDiv = document.getElementById("successMessage");
+  /*const successDiv = document.getElementById("successMessage");*/
 
   form.addEventListener("submit", function (e) {
     e.preventDefault(); // prevent page reload
@@ -396,9 +484,39 @@ document.addEventListener("DOMContentLoaded", function () {
       .then((data) => {
         // Check if PHP response contains success keyword
         if (data.toLowerCase().includes("success")) {
-          successDiv.style.display = "block"; // show div
-          $("#medicalAid").css("display","none");
-          $("#message").css("display","none");
+          validateMedicalForm();
+          form.reset();
+        } else {
+          alert("Something went wrong: " + data);
+        }
+      })
+      .catch((error) => {
+        alert("Error submitting form: " + error);
+      });
+  });
+});
+
+/*message form submission*/
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("messageForm");
+  const successDiv = document.getElementById("successMessage2");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // prevent page reload
+
+    const formData = new FormData(form);
+
+    fetch("./php/userMessageConnect.php", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => response.text())
+      .then((data) => {
+        // Check if PHP response contains success keyword
+        if (data.toLowerCase().includes("success")) {
+            successDiv.style.display = "block"; 
+            $("#medicalAid").css("display","none");
+            $("#message").css("display","none");
           form.reset();
         } else {
           alert("Something went wrong: " + data);
@@ -411,10 +529,28 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+
+
+
+
+
+
+
+
+
+/*on click of success button*/
 $("#successBtn > input").click("click",()=>{
   $("#medicalAid").css("display","block");
    $("#message").css("display","none");
    $("#successMessage").css("display","none");
+   
+});
+
+$("#successMessage2 > #successBtn > input").click("click",()=>{
+  $("#medicalAid").css("display","none");
+   $("#message").css("display","block");
+   $("#successMessage2").css("display","none");
    
 });
 
@@ -424,8 +560,9 @@ $("#btnGreaterThan > img").click("click",()=>{
   $("#video-header >p").text("How to send a message");
   $("#dot1").css("background-color","white");
   $("#dot2").css("background-color","#A376A2");
-  $("#btnLessThan").css("display","block");
-  $("#btnGreaterThan").css("display","none");
+  $("#btnLessThan").css("visibility","visible");
+  $("#btnGreaterThan").css("visibility","hidden");
+  $("#video-play > video").attr("src","./vidoes/how-to-send-a-message.mp4");
 })
 
 
@@ -433,8 +570,9 @@ $("#btnLessThan > img").click("click",()=>{
   $("#video-header >p").text("How to apply medical aid");
   $("#dot2").css("background-color","white");
   $("#dot1").css("background-color","#A376A2");
-  $("#btnGreaterThan").css("display","block");
-  $("#btnLessThan").css("display","none");
+  $("#btnGreaterThan").css("visibility","visible");
+  $("#btnLessThan").css("visibility","hidden");
+  $("#video-play > video").attr("src","./vidoes/how-to-apply-medical-aid.mp4");
 })
 
 
@@ -450,3 +588,8 @@ $("#btnLessThan > img").click("click",()=>{
 /*about page*/
 
 
+
+/*footer*/
+var date = new Date();
+var year = date.getFullYear();
+document.getElementById("date").innerText = year;

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact | MED-ACCESS</title>
       <link  rel="icon" href="./images/logo/MED-ACCESS-LOGO-LIGHT.png"> 
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/responsive.css">
@@ -163,17 +163,17 @@
                             </div>
                             
                             <div id="formInput-1">
-                                <input class="montserrat" id="firstname" type="text" name="firstname" placeholder="firstname" required>
-                                <input class="montserrat" id="lastname" type="text" name="lastname" placeholder="lastname" required>
+                                <input class="montserrat" id="firstname" type="text" name="firstname" placeholder="firstname" >
+                                <input class="montserrat" id="lastname" type="text" name="lastname" placeholder="lastname" >
                             </div>
 
                             <div id="formInput-2">
-                                <input class="montserrat" id="email" type="email" name="email"  placeholder="Email" required>
+                                <input class="montserrat" id="email" type="email" name="email"  placeholder="Email" >
                                 <input class="montserrat" id="phone"  type="text"  name="phone"  placeholder="Phone number">
                             </div>
                              
                             <div id="formInput-3">
-                                 <select class="montserrat" name="plan">
+                                 <select class="montserrat" id="formPlan" name="plan">
                                     <option value="">Select A Plan</option>
                                     <option value="Basic Plan">Basic Plan</option>
                                     <option value="Standard Plan">Standard Plan</option>
@@ -183,7 +183,7 @@
                             </div>
                              
                             <div id="formInput-4">
-                                 <input type="checkbox">
+                                 <input  type="checkbox">
                                  <label class="montserrat">By providing my details and clicking “submit”, I agree that my information will
                                        be transferred to MED-ACCESS contracted third party brokers and marketing agents,
                                         and that such information shall be used to contact me by email or telephone to 
@@ -214,11 +214,26 @@
                                 <input type="button" value="OK">
                             </div>
                     </div>
-                   
+                     
+                    
+                    <!-- Hidden success message -->
+                     <div id="successMessage2">
+                            <div id="successIcon">
+                                 <div>
+                                    <img src="./images/icons/correct-tick.gif">
+                                 </div>
+                            </div>
+                            <div id="successText">
+                                <p class="montserrat">Thank you for sending us message!We will send a feedback as soon as possible</p>
+                            </div>
+                            <div id="successBtn">
+                                <input type="button" value="OK">
+                            </div>
+                    </div>
                     
                 <!--message form-->
                    <div id="message">
-                           <form id="messageForm">
+                           <form id="messageForm" action="./php/userMessageConnect.php" method="post">
 
                             <div id="formH">
                                 <p class="roboto">Send Us a Message</p>
@@ -226,11 +241,11 @@
                             
                             <div id="formInput-1">
                                 <input class="montserrat" id="firstname" type="text" name="firstname" placeholder="Firstname" required>
-                                <input class="montserrat" id="email" type="email" name="Email" placeholder="Email" required>
+                                <input class="montserrat" id="email" type="email" name="email" placeholder="Email" required>
                             </div>
 
                             <div id="formInput-2">
-                                  <textarea id="textMessage" class="montserrat" placeholder="Enter your message"></textarea>
+                                  <textarea id="textMessage" name="textMessage" class="montserrat" placeholder="Enter your message"></textarea>
                             </div>
                              
                            
@@ -245,7 +260,7 @@
                             </div>
 
                             <div id="formInput-5">
-                               <input class="montserrat" type="submit" value="send">
+                               <input class="montserrat" id="messageSubmit" type="submit" value="send">
                             </div>
                        </form>
                    </div>
@@ -259,7 +274,7 @@
 
                         <!--video play-->
                           <div id="video-play">
-                              <video controls src="./vidoes/Home - Personal - Microsoft​ Edge 2025-10-29 02-48-54.mp4"></video>
+                              <video controls src="./vidoes/how-to-apply-medical-aid.mp4"></video>
                           </div>
 
                           <!--video header-->
@@ -303,7 +318,7 @@
                  <div id="address-number">
                      <ul class="roboto">
                         <li>MED-ACCESS</li>
-                        <li>35 andries potgreter blod,Vanderbijlpark</li>
+                        <li>35 Andries Potgieter Blvd, Vanderbijlpark</li>
                          <li>+27 11 254 0000</li>
                      </ul>
                  </div>
@@ -327,7 +342,7 @@
                  </div>
 
                <div id="footerlogo" >
-                         <img  class="slideAndRotateLeft" src="./images/logo/MED-ACCESS-LOGO-LIGHT.png" >
+                         <a href="./index.html"><img  class="slideAndRotateLeft" src="./images/logo/MED-ACCESS-LOGO-LIGHT.png" ></a>
                          <hr>
               </div>
                 
@@ -335,7 +350,7 @@
        <hr>
        <!--copy rights-->
        <div id="copyrights">
-           <p>&copy;2025 <span style="color: black;">MED-ACCESS</span>.All rights reserved</p>
+           <p>&copy; <span id="date"></span> <span style="color: black;">MED-ACCESS</span>.All rights reserved</p>
        </div>
     </div>
 
