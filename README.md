@@ -20,15 +20,15 @@ MED-ACCESS is a responsive, user-friendly healthcare aid platform designed to he
 - **Design**: Custom fonts, responsive layout, branded color scheme
 
 ## 📁 Folder Structure
-├── css/              ` Stylesheets`
-├── images/           
-├── js/               `JavaScript functionality` 
-├── php/              `Backend scripts (e.g., form handling)` 
-├── videos/           `Instructional media``
-├── index.html        `Homepage`
-├── about.html        `About Us page`
-├── contact.html      `Contact and application form`
-├── README.md         `Project documentation`
+├── css/              ` Stylesheets`                           
+├── images/                                                                   
+├── js/               `JavaScript functionality`                                        
+├── php/              `Backend scripts (e.g., form handling)`                               
+├── videos/           `Instructional media`                          
+├── index.html        `Homepage`                               
+├── about.html        `About Us page`                                   
+├── contact.html      `Contact and application form`                               
+├── README.md         `Project documentation`                             
 
 
 ## 📦 Setup Instructions
