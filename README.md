@@ -1,6 +1,6 @@
 # 🏥 Med-Access
 
-**Med-Access** is an interactive web application that allows users to **apply for medical aid** and **check possible diseases** based on selected symptoms.  
+**Med-Access** is an interactive website that allows users to **apply for medical aid** and **check possible diseases** based on selected symptoms.  
 The project focuses on improving access to basic healthcare information through a simple and user-friendly web interface.
 
 ---
