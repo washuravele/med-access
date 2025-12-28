@@ -1,46 +1,82 @@
-# MED-ACCESS – Affordable Healthcare, Made Simple 🇿🇦💙
+# 🏥 Med-Access
 
-MED-ACCESS is a responsive, user-friendly healthcare aid platform designed to help South Africans find affordable medical plans and access online support. Built with HTML, CSS, JavaScript, and PHP, it offers a seamless experience for browsing plans, checking symptoms, and contacting consultants.
+**Med-Access** is an interactive web application that allows users to **apply for medical aid** and **check possible diseases** based on selected symptoms.  
+The project focuses on improving access to basic healthcare information through a simple and user-friendly web interface.
 
+---
 
-## 🩺 Key Features
+## 🚀 Live Demo
 
-- 🏠 Homepage with welcoming visuals and mission-driven messaging
-- 📋 Plan comparison (Basic, Standard, Premium) with pricing and benefits
-- 🧼 Health education section promoting hygiene and wellness
-- 📞 Contact form with plan selection and consultant follow-up
-- 🎥 Instructional video on how to apply for medical aid and send message
-- 📄 About Us page with mission, values, and team visuals
-- 📍 Footer with contact info and social media links
+🔗 https://washuravele.github.io/med-access
 
-## 🛠️ Tech Stack
-
-- **Frontend**: HTML5, CSS3, JavaScript
-- **Backend**: PHP (for form handling and future integrations)
-- **Design**: Custom fonts, responsive layout, branded color scheme
-
-## 📁 Folder Structure
-├── css/              ` Stylesheets`                           
-├── images/                                                                   
-├── js/               `JavaScript functionality`                                        
-├── php/              `Backend scripts (e.g., form handling)`                               
-├── videos/           `Instructional media`                          
-├── index.html        `Homepage`                               
-├── about.html        `About Us page`                                   
-├── contact.html      `Contact and application form`                               
-├── README.md         `Project documentation`                             
+---
 
 
-## 📦 Setup Instructions
+## 🌟 Features
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/washuravaele/med-access.git
+- 📝 **Medical Aid Application** – Users can apply for medical aid through an online form  
+- 🩺 **Symptom Checker** – Select symptoms and view possible diseases  
+- 🎨 **Responsive UI** – Clean and easy-to-use design  
+- ⚙️ **Backend Processing** – PHP used for form handling and logic  
 
+---
 
-💡 Future Enhancements- Add user authentication and dashboard
-* Integrate real-time symptom checker AI
-* Enable plan subscription and payment gateway
-* Localize content for multiple South African languages
+## 🛠️ Technologies Used
+
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **PHP**
+
+---
+
+## 📸 Screenshots
+
+> Screenshots of the application interface.
+### Home page
+![Home Page](screenshots/home-page.jpeg)
+
+### Symptom Checker
+![Symptom Checker](screenshots/check%20symptoms.jpeg)
+
+### Contact Page
+![Contact Page](screenshots/contact-page.jpeg)
+
+### About Us Page
+![about us](screenshots/about-us-page.jpeg)
+
+---
+
+## 📂 Project Structure
+
+```
+med-access/
+├─ css/
+├─ images/    
+├─ js/
+├─ php/  
+├─ screenshots/       
+├─ vidoes/            
+├─ about.html
+├─ contact.html
+├─ index.html
+├─ README.md
+
+```
+---
+
+## 👨‍💻 Author
+
+**Washu Ravele**
+Aspiring Software Developer
+
+* GitHub: [https://github.com/washuravele](https://github.com/washuravele)
+
+---
+
+## 📄 License
+
+This project is for educational and portfolio purposes.
+
 
 
